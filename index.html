@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Kemal - Developer Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemal | Software Developer</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --text: #f8fafc;
+            --accent: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        h1 { font-size: 3rem; margin-bottom: 0.5rem; color: var(--accent); }
+        p { font-size: 1.2rem; opacity: 0.8; }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card h3 { margin-top: 0; color: var(--accent); }
+        .footer {
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            opacity: 0.5;
+        }
+        a { color: var(--accent); text-decoration: none; font-weight: bold; }
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            background: #0ea5e9;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>This is the official developer website for my mobile applications.</p>
-    <p>Contact: kemalekim07@gmail.com</p>
+
+    <div class="container">
+        <h1>Kemal</h1>
+        <p>Software Developer | Mobile & Backend Specialist</p>
+        
+        <div class="projects">
+            <div class="card">
+                <h3>TAM90</h3>
+                <p>Football Quiz & Trivia App</p>
+                <span class="badge">App Store</span>
+            </div>
+
+            <div class="card">
+                <h3>SoloHabit</h3>
+                <p>Offline daily habit and task manager.</p>
+                <span class="badge">Coming Soon</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Kemal | <a href="/app-ads.txt">app-ads.txt</a></p>
+            <p>This is the official publisher page for my mobile applications..</p>
+        </div>
+    </div>
+
 </body>
 </html>
